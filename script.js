@@ -10,18 +10,14 @@ button.addEventListener('click', function(){
     if (age < 18){
         price = price * 0.825;
         console.log(price.toFixed(2));
-        if (document.getElementById('answer').insertAdjacentHTML = false){
             document.getElementById('answer').insertAdjacentHTML('beforebegin','<p><em>sei minorenne? </em>hai diritto ad uno sconto del 17,5%!</p>');
             document.getElementById('answer').insertAdjacentHTML('afterEnd',`<p>hai risparmiato ben:  ${(price.toFixed(2)/0.825*0.175).toFixed(2)} &euro; </p>`);
-        } else {}
     } 
     else if (age > 65){
         price = price * 0.667;
         console.log(price.toFixed(2));
-        if (document.getElementById('answer').insertAdjacentHTML = false){
             document.getElementById('answer').insertAdjacentHTML('beforebegin','<p><em>hai più di 65 anni? </em>hai diritto ad uno sconto del 33.3%!</p>');
             document.getElementById('answer').insertAdjacentHTML('afterEnd',`<p>hai risparmiato ben:  ${(price.toFixed(2)/0.667*0.333).toFixed(2)} &euro; </p>`);
-        } else {}
     } else {
         console.log(price.toFixed(2));
     }
