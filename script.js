@@ -18,4 +18,6 @@ button.addEventListener('click', function(){
         console.log(price.toFixed(2));
     }
 
+    document.querySelector('p.price').innerHTML = `in base ai dati da te forniti il costo del biglietto è di: ${price.toFixed(2)} &euro;`;
+
 });
